@@ -21,3 +21,26 @@ spec:
           image: samikoskivaara/nginx:v0.1.0
           ports:
             - containerPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  namespace: test
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: samikoskivaara/nginx:v0.1.0
+          ports:
+            - containerPort: 80
