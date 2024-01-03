@@ -29,3 +29,5 @@
 - `docker pull nginx:1.23.3`
 - `docker tag nginx:1.23.3 samikoskivaara/nginx:v0.1.0`
 - `docker push samikoskivaara/nginx:v0.1.0`
+
+![image](https://github.com/rx-prod/my-app/assets/10957012/930cc97a-11de-4893-9eb6-562729392dca)
